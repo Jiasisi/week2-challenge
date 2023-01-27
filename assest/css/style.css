@@ -116,23 +116,14 @@ p {
     position: relative;
 }
 
-#card-1 {
-    width: 70%;
-    padding: 10px;
-    border: var(--dark-blue) 2px;
-    position: relative;
-    display: block;
-}
 
 .card-image {
     width: 100%;
     min-width: 300px;
-
 }
 
 
-.card h3,
-#card-1 h3 {
+.card h3 {
     position: relative;
     flex: 1 0 0;
     bottom: 0;
@@ -147,7 +138,9 @@ main img:hover {
     filter: blur(2px);
 }
 
-
+main img:active {
+    width: 120%;
+}
 
 .content nav {
     width: 80%;
@@ -172,8 +165,7 @@ main img:hover {
 @media screen and (max-width: 768px) {
     .different-work,
     p,
-    .content nav,
-    #card-1 {
+    .content nav {
         width: 100%;
     }
 
